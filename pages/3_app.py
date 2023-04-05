@@ -10,7 +10,6 @@ from pandas_datareader import data as pdr
 import yfinance as yfin
 yfin.pdr_override()
 
-
 start = '2010-01-01'
 end = '2022-12-31'
 # start = dt.datetime(2013, 1, 1)
@@ -24,7 +23,7 @@ df = pdr.get_data_yahoo(user_input, start, end)
 # df = web.DataReader('AAPL', 'yahoo', start='2019-09-10', end='2019-10-09')
 # df = web.DataReader('AAPL', 'yahoo' ,start ,end)
 
-st.subheader('Data from 2010 - 2019')
+st.subheader('Data Description from 2010 - 2019')
 st.write(df.describe())
 
 # Visulization
